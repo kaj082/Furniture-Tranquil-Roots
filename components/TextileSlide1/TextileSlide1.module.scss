@@ -1,0 +1,201 @@
+.TextileSlide1 {
+  width: 100vw;
+  padding-left: 13.13%;
+  padding-right: 13.75%;
+  padding-bottom: 5vh;
+  background-color: #f9f5f2;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+
+  .background {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 55.55%;
+    height: fit-content;
+    img {
+      width: 100%;
+      height: auto;
+      object-fit: contain;
+    }
+
+    @media (max-width: 900px) {
+      left: -32%;
+    }
+  }
+
+  .details {
+    width: 35.83vw;
+    height: fit-content;
+    margin-top: 15vh;
+    // max-width: 516px;
+    .titleContainer {
+      overflow: hidden;
+      .title {
+        color: #b89774;
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 30px;
+        text-transform: uppercase;
+        transform: translateY(100%);
+      }
+    }
+
+    .title1 {
+      width: 100%;
+      color: #09214d;
+      text-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.08);
+      font-size: 55px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 132.037%;
+      text-transform: capitalize;
+      transform: translateY(105%);
+    }
+
+    .description {
+      margin-bottom: 21px;
+      width: 88.75%;
+      color: #7b7b7b;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 180%;
+      text-transform: capitalize;
+    }
+    .btnInfo {
+      display: flex;
+      align-items: center;
+      width: 90%;
+      justify-content: space-between;
+      height: fit-content;
+
+      .Views1 {
+        width: 112px;
+        height: fit-content;
+
+        .number {
+          color: #09214d;
+          text-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.08);
+          font-size: 36px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: 132.037%;
+          text-transform: capitalize;
+        }
+
+        .info {
+          color: var(--n-1, #000);
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: 28.5px;
+          letter-spacing: -0.016px;
+        }
+      }
+
+      .btn {
+        width: 190px;
+      }
+      @media (max-width: 1440px) {
+        width: 100%;
+      }
+    }
+  }
+
+  .imageContainer {
+    width: 40.62vw;
+    height: fit-content;
+    position: relative;
+    margin-bottom: 90px;
+    img {
+      width: 100%;
+      height: auto;
+      object-fit: contain;
+    }
+    .dash {
+      position: absolute;
+      top: 26%;
+      left: 15%;
+      width: 93px;
+      height: 3px;
+      background: #b89774;
+    }
+    @media (max-width: 1440px) {
+      margin-top: 3vh;
+    }
+  }
+  @media (max-width: 1440px) {
+    padding: 15vh 8.75% 10vh 8.75%;
+  }
+}
+
+@media ((max-width: 900px)) {
+  .TextileSlide1 {
+    width: 100%;
+    padding-left: 41px;
+    padding-right: 41px;
+    padding-top: 0;
+    display: flex;
+    justify-content: unset;
+    flex-direction: column;
+    padding-bottom: 0;
+
+    .details {
+      width: 100%;
+      height: fit-content;
+      margin-top: 145px;
+      max-width: unset;
+      .title {
+        display: none;
+      }
+      .title1 {
+        width: 100%;
+        margin-bottom: 12px;
+        font-size: 35px;
+        text-align: center;
+      }
+      .description {
+        width: 100%;
+        margin-bottom: 45px;
+        text-align: center;
+      }
+      .btnInfo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        justify-content: unset;
+        height: fit-content;
+        margin-bottom: 45px;
+        .Views1 {
+          width: 87px;
+          height: fit-content;
+          margin-bottom: 45px;
+        }
+        .btn {
+          width: 100%;
+          display: flex;
+          justify-content: center;
+        }
+      }
+    }
+    .imageContainer {
+      width: 100%;
+      height: fit-content;
+      position: relative;
+      margin-bottom: 23px;
+      margin-top: -70px;
+      img {
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+      }
+      .dash {
+        display: none;
+      }
+    }
+  }
+}

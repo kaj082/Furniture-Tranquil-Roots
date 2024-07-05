@@ -1,0 +1,24 @@
+.Cursor1 {
+  position: fixed;
+  top: -50px;
+  left: -50px;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  z-index: 5;
+  pointer-events: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  p {
+    font-weight: 500;
+    font-size: 9px;
+    line-height: 13px;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.6);
+  }
+}

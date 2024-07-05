@@ -1,0 +1,279 @@
+.ContactUs {
+  width: 100vw;
+  height: fit-content;
+  padding-top: 207.51px;
+  padding-left: 11.66vw;
+  padding-bottom: 324px;
+  .mainTitleContainer {
+    margin-bottom: 107px;
+    .title {
+      overflow: hidden;
+      opacity: 0;
+      transform: translateY(100%);
+      color: #282828;
+      //   font-size: 38px;
+      font-size: 2.6vw;
+      font-weight: 400;
+      line-height: 60px;
+      @media (max-width: 1440px) {
+        line-height: 48px;
+      }
+    }
+    .title2Box {
+      display: flex;
+      align-items: center;
+      overflow: hidden;
+      opacity: 0;
+      transform: translateY(100%);
+      .title2 {
+        color: #282828;
+        font-size: 1.6vw;
+        font-weight: 400;
+        line-height: 28.8px;
+      }
+      .line {
+        width: 74px;
+        margin-left: 12px;
+        border: 1px solid #cccccc;
+      }
+    }
+  }
+  .middleContainer {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    padding-left: 8.26vw;
+    margin-bottom: 154px;
+
+    .leftContainer {
+      display: flex;
+      flex-direction: column;
+      margin-right: 11.78vw;
+
+      .contentBox {
+        width: fit-content;
+        height: fit-content;
+        margin-bottom: 30px;
+        &:last-child {
+          margin-bottom: 0;
+        }
+        .text1 {
+          //   width: 18.61vw;
+          //   width: fit-content;
+          color: #232323;
+          font-size: 1.5vw;
+          font-weight: 700;
+          line-height: 33px;
+          margin-bottom: 6px;
+        }
+        .text2 {
+          width: 241px;
+          color: #686868;
+          font-size: Min(15px, 1vw);
+          font-weight: 400;
+          line-height: 28px;
+        }
+      }
+    }
+    .mobileImageSlide {
+      display: none;
+    }
+    .rightContainer {
+      padding-right: 19.93vw;
+      //   width: 29.65vw;
+      .titleContainer {
+        .title {
+          color: #282828;
+          font-size: 2.2vw;
+          font-weight: 400;
+          line-height: 38.4px;
+          margin-bottom: 35px;
+        }
+      }
+      .requiredText {
+        color: #686868;
+        font-size: Min(15px, 1.1vw);
+        font-weight: 400;
+        line-height: 25.5px;
+        margin-bottom: 19.5px;
+        .required {
+          color: #e80000;
+        }
+      }
+      .input {
+        width: 100%;
+        height: 51.84px;
+        border: none;
+        outline: none;
+        padding: 12.5px 10px;
+        background: #f2f2f2;
+        margin-bottom: 36px;
+        border-bottom: 2px solid #ddd;
+      }
+      .input::placeholder {
+        color: #282828;
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 24px;
+      }
+      .textarea {
+        resize: none;
+        width: 100%;
+        height: 198px;
+        border: none;
+        outline: none;
+        padding-top: 12px;
+        padding-left: 10.5px;
+        background: #f2f2f2;
+        margin-bottom: 36px;
+        border-bottom: 2px solid #ddd;
+      }
+      .textarea::placeholder {
+        color: #282828;
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 24px;
+      }
+    }
+  }
+  .imageSlide {
+    width: 100vw;
+    height: 100%;
+    padding-left: 3.8vw;
+    .imageContainer {
+      width: 68.81vw;
+      height: fit-content;
+      img {
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+      }
+    }
+  }
+}
+@media (max-width: 1200px) {
+  .ContactUs {
+    .middleContainer {
+      padding-left: 6.26vw;
+      .leftContainer {
+        margin-right: 9.78vw;
+      }
+      .rightContainer {
+        padding-right: 10.93vw;
+      }
+    }
+    .imageSlide {
+      padding-left: 3.8vw;
+    }
+  }
+}
+@media (max-width: 900px) {
+  .ContactUs {
+    width: 100vw;
+    height: fit-content;
+    padding: 140px 20px 200px 20px;
+    .mainTitleContainer {
+      margin-bottom: 127px;
+      .title {
+        font-size: 20px;
+        line-height: 28px;
+        font-weight: 700;
+      }
+      .title2Box {
+        .title2 {
+          font-size: 18px;
+        }
+        .line {
+          width: 61px;
+          margin-left: 10px;
+        }
+      }
+    }
+    .middleContainer {
+      display: flex;
+      flex-direction: column-reverse;
+      padding-left: 0;
+      margin-bottom: 0;
+      .leftContainer {
+        align-items: center;
+        margin-right: 0;
+        .contentBox {
+          text-align: center;
+          width: fit-content;
+          height: fit-content;
+          margin-bottom: 30px;
+          &:last-child {
+            margin-bottom: 0;
+          }
+          .text1 {
+            font-size: 20px;
+            line-height: 27px;
+            margin-bottom: 10px;
+          }
+          .text2 {
+            // width: 235px;
+            color: #787878;
+            font-size: 15px;
+          }
+        }
+      }
+      .mobileImageSlide {
+        display: block;
+        width: 100%;
+        height: fit-content;
+        padding-top: 95px;
+        padding-bottom: 170px;
+        img {
+          width: 100%;
+          height: auto;
+          object-fit: contain;
+        }
+      }
+      .rightContainer {
+        padding-right: 0;
+        .titleContainer {
+          display: flex;
+          justify-content: center;
+          .title {
+            width: 56.15vw;
+            text-align: center;
+            font-size: 30px;
+            font-weight: 700;
+            margin-bottom: 54px;
+          }
+        }
+        .requiredText {
+          font-size: 14px;
+          margin-bottom: 6px;
+        }
+        .input {
+          padding: 13.5px 11.7px;
+        }
+        .textarea {
+          padding: 13.5px 11.7px;
+          border-bottom: 2px solid #ddd;
+        }
+        .button {
+          display: flex;
+          justify-content: center;
+          .btn {
+            @media (max-width: 500px) {
+              width: 100%;
+              padding-left: 0;
+              padding-right: 0;
+              justify-content: center;
+            }
+          }
+          .text {
+            @media (max-width: 500px) {
+              padding-right: 20px;
+            }
+          }
+        }
+      }
+    }
+    .imageSlide {
+      display: none;
+    }
+  }
+}

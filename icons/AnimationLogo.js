@@ -1,0 +1,17 @@
+import * as React from "react";
+const AnimationLogo = (props) => (
+  <svg
+    width={74}
+    height={74}
+    viewBox="0 0 74 74"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    {...props}
+  >
+    <path
+      d="M73.2897 0.0478516H0.709961V20.5986H11.3049L34.8949 56.4955L35.0286 56.7009H37.4482V17.8104H33.2742V46.393L13.6724 16.5582L13.5387 16.3528H4.88402V4.28713H69.1156V42.9689H73.2897V0.0478516ZM46.4616 17.3017H42.2875V56.4922H69.1156V69.6894H4.88402V30.5544H0.709961V73.9515H73.2897V52.2269H46.4616V17.2985V17.3017ZM14.892 39.8645H10.0005V58.0282H14.892V39.8645Z"
+      fill="white"
+    />
+  </svg>
+);
+export default AnimationLogo;

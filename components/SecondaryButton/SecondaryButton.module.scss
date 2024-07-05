@@ -1,0 +1,16 @@
+.button {
+  cursor: pointer;
+  display: flex;
+  width: fit-content;
+  height: 41px;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1.5px solid #b89774;
+  .read {
+    color: #131313;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 160%;
+  }
+}

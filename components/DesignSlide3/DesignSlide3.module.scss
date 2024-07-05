@@ -1,0 +1,60 @@
+.DesignSlide3 {
+  width: 100vw;
+  height: fit-content;
+  display: flex;
+  padding: 269px 8.95vw 0 9.09vw;
+  @media (max-width: 1440px) {
+    padding-bottom: 100px;
+  }
+  .imageContainer {
+    position: relative;
+    width: 41.73vw;
+    height: fit-content;
+    .image {
+      width: 100%;
+      height: auto;
+      object-fit: contain;
+    }
+    .playIcon {
+      position: absolute;
+      left: 25px;
+      bottom: 14px;
+      svg {
+        circle {
+          fill: #b89774;
+        }
+      }
+      @media (max-width: 900px) {
+        display: none;
+      }
+    }
+  }
+  .rightContainer {
+    padding-left: 5.34vw;
+  }
+}
+.rotateBackground {
+  width: 140vw;
+  height: 225px;
+  background-color: #f9f5f2;
+  transform-origin: 80% 100%;
+  rotate: -6deg;
+}
+@media (max-width: 900px) {
+  .DesignSlide3 {
+    padding: 197px 20.5px 0 20.5px;
+    .imageContainer {
+      display: none;
+    }
+    .rightContainer {
+      padding-left: 0;
+    }
+  }
+  .rotateBackground {
+    width: 140vw;
+    height: 140px;
+    background-color: #f9f5f2;
+    transform-origin: 80% 100%;
+    rotate: -6deg;
+  }
+}

@@ -1,0 +1,175 @@
+.DesignHeroSection {
+  width: 100vw;
+  height: fit-content;
+  display: flex;
+  position: relative;
+  padding-top: 187.85px;
+  padding-right: 9.37vw;
+  .imageContainer {
+    width: 71.73vw;
+    height: 100%;
+    position: relative;
+    img,
+    video {
+      width: 100%;
+      height: auto;
+      object-fit: contain;
+      margin-bottom: -6px;
+    }
+    video::-webkit-media-controls {
+      display: none;
+    }
+    .playVideoContainer {
+      display: none;
+      position: absolute;
+      left: 62px;
+      bottom: 41px;
+      display: flex;
+      align-items: center;
+      .text {
+        color: #fff;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 143%;
+        padding-left: 14px;
+      }
+    }
+  }
+  .rectangle {
+    position: absolute;
+    top: 149px;
+    right: 26.94vw;
+    width: 25.62vw;
+    height: fit-content;
+    .rectangleImage {
+      display: none;
+    }
+    .webRectangleImage {
+      position: relative;
+      width: 100%;
+      height: auto;
+      object-fit: contain;
+    }
+    .titleContainer {
+      position: absolute;
+      top: 50%;
+      right: -17vw;
+      transform: translateY(-50%);
+      display: flex;
+      align-items: center;
+      overflow: hidden;
+      .lineContainer {
+        overflow: hidden;
+        .line {
+          width: 4.65vw;
+          border: 2px solid #b89774;
+          transform: translateY(100%);
+        }
+      }
+      .title {
+        transform: translateY(100%);
+        width: 32.08vw;
+        padding-left: 17px;
+        height: fit-content;
+        color: #000;
+        font-size: 2.8vw;
+        font-weight: 700;
+        line-height: 55px;
+      }
+    }
+  }
+  .rightContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-left: 2.29vw;
+    padding-bottom: 59px;
+    .textBox {
+      align-items: unset;
+      .textContainer {
+        display: flex;
+        align-items: center;
+        padding-bottom: 18px;
+        .text {
+          padding-left: 10px;
+          color: #000;
+          font-size: 16px;
+          font-weight: 600;
+          line-height: 28.5px;
+          letter-spacing: -0.016px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 900px) {
+  .DesignHeroSection {
+    padding-top: 0;
+    padding-right: 0;
+    flex-direction: column;
+    .imageContainer {
+      width: 100%;
+      img,
+      video {
+        transform: translateX(-30%);
+        width: auto;
+        height: 100vh;
+      }
+      .playVideoContainer {
+        display: none;
+        left: 37px;
+        bottom: 30px;
+        .text {
+          display: none;
+        }
+      }
+    }
+    .rectangle {
+      width: 280px;
+      right: 0;
+      top: 92vh;
+      transform: scaleY(-1);
+      .rectangleImage {
+        display: block;
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+      }
+      .webRectangleImage {
+        display: none;
+      }
+      .titleContainer {
+        transform: translateY(-52%);
+        right: 30px;
+        .line {
+          width: 33.8px;
+          transform: translateY(-100%);
+        }
+        .title {
+          width: 162px;
+          padding-left: 14px;
+          font-size: 30px;
+          font-weight: 600;
+          line-height: 42.5px;
+          transform: scaleY(-1) translateY(100%);
+        }
+      }
+    }
+    .rightContainer {
+      background: #f9f5f2;
+      padding-left: 0;
+      padding-top: 219px;
+      padding-bottom: 172px;
+      .textBox {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .textContainer {
+          .text {
+            color: #7b7b7b;
+          }
+        }
+      }
+    }
+  }
+}

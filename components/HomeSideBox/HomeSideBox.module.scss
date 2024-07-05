@@ -1,0 +1,67 @@
+.HomeSideBox {
+  width: 598px;
+  height: fit-content;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: #f2f2f2;
+  backdrop-filter: blur(2px);
+  padding: 18.9px 46px 26px 34px;
+  .textContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 14.09px;
+    .text {
+      cursor: pointer;
+      color: #545450;
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 20px;
+    }
+    .btn {
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+
+      .btnText {
+        color: #545450;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 104.593%;
+        text-transform: uppercase;
+      }
+      .btnArrow {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 4px;
+      }
+    }
+  }
+  .imageContainer {
+    display: flex;
+    width: 100%;
+    height: fit-content;
+    justify-content: space-between;
+    .imageDiv {
+      width: 162px;
+      height: 156px;
+      img {
+        width: 100%;
+        height: fit-content;
+        object-fit: contain;
+      }
+    }
+  }
+}
+@media (max-width: 1150px) {
+  .HomeSideBox {
+    width: 436px;
+    .imageContainer {
+      :nth-child(2) {
+        display: none;
+      }
+    }
+  }
+}

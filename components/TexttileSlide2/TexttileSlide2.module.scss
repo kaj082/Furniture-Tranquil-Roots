@@ -1,0 +1,138 @@
+.TexttileSlide2 {
+  width: 100vw;
+  height: fit-content;
+  padding: 51px 13.75% 10vh 13.13%;
+  margin-bottom: -190px;
+
+  .imageContainer {
+    width: 100%;
+    height: fit-content;
+    position: relative;
+
+    .bigImage {
+      width: 100%;
+      height: auto;
+      object-fit: contain;
+    }
+    .image {
+      width: 279.926px;
+      height: 89.586px;
+      position: absolute;
+      bottom: -50px;
+      right: -57px;
+    }
+    .fiveImage {
+      width: 273.779px;
+      height: 180.788px;
+      object-fit: contain;
+      position: absolute;
+      top: -139px;
+      left: -60px;
+    }
+  }
+
+  .details {
+    display: none;
+  }
+
+  @media (max-width: 1440px) {
+    padding-left: 8.75%;
+    padding-right: 8.75%;
+  }
+}
+
+@media (max-width: 900px) {
+  .TexttileSlide2 {
+    width: 100vw;
+    height: fit-content;
+    padding: 51px 0 10vh 0;
+    margin-bottom: -92px;
+
+    .imageContainer {
+      width: 100%;
+      height: fit-content;
+      position: relative;
+
+      .bigImage {
+        width: auto;
+        height: 100%;
+        object-fit: contain;
+      }
+      .image {
+        width: 279.926px;
+        height: 89.586px;
+        object-fit: contain;
+        position: absolute;
+        bottom: -49px;
+        right: 50%;
+        transform: translateX(50%);
+      }
+      .fiveImage {
+        display: none;
+      }
+    }
+
+    .details {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-left: 0px;
+      padding-right: 0px;
+      margin-bottom: 20vh;
+      margin-top: 15vh;
+
+      .dash {
+        width: 30px;
+        height: 8px;
+        background: #b89774;
+        margin-bottom: 32px;
+      }
+      .title {
+        color: #2d2d2d;
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 90.618px;
+
+        margin-bottom: 45px;
+      }
+      .mobileImage {
+        margin-bottom: 45px;
+        width: 100%;
+        height: fit-content;
+        img {
+          width: 100%;
+          height: auto;
+          object-fit: contain;
+        }
+      }
+      .ReadMore {
+        all: unset;
+        cursor: pointer;
+        display: flex;
+        width: fit-content;
+        height: 41px;
+        padding: 10px;
+        justify-content: center;
+        align-items: center;
+        border-bottom: 1.5px solid var(--p-2, #b89774);
+
+        .read {
+          color: #131313;
+          font-size: 13px;
+          text-transform: capitalize;
+          font-style: normal;
+          font-weight: 600;
+          line-height: 160%;
+        }
+      }
+      .ReadMore:hover {
+        border-bottom: 1.5px solid var(--p-2, #b89774);
+        .read {
+          color: #b89774;
+        }
+      }
+    }
+  }
+}

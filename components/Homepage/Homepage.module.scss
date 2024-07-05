@@ -1,0 +1,369 @@
+.Homepage {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  .HomeLCM {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+
+    .slider {
+      height: fit-content;
+      width: 100vw;
+      overflow: hidden;
+      position: absolute;
+      top: 0;
+      left: 0;
+      .wrapperBig {
+        width: 100vw;
+        height: 100vh;
+        overflow: hidden;
+        position: relative;
+        .wrapper {
+          width: 100vw;
+          height: fit-content;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          .image {
+            width: 100%;
+            height: fit-content;
+            object-fit: contain;
+          }
+        }
+
+        .gradient {
+          position: absolute;
+          z-index: 1;
+          width: 100vw;
+          height: 100vh;
+          opacity: 0.5;
+          background: linear-gradient(
+            180deg,
+            rgba(0, 0, 0, 0) 0%,
+            rgba(0, 0, 0, 0.6) 100%
+          );
+        }
+
+        .contentContainer {
+          position: absolute;
+          z-index: 2;
+          // width: 100vw;
+          // height: 100vh;
+          padding-left: 9.02vw;
+          padding-top: 282px;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          .mainText {
+            // width: 31.52vw;
+            width: 41.55vw;
+            height: fit-content;
+            margin-bottom: 20vh;
+            .heading {
+              overflow: hidden;
+              .title {
+                opacity: 0;
+                transform: translateY(100%);
+                color: #fff;
+                text-shadow: 0px 5px 21px rgba(0, 0, 0, 0.11);
+                font-size: 70px;
+                font-weight: 700;
+                line-height: 132.037%;
+              }
+            }
+            .heading {
+              overflow: hidden;
+              .subtitle {
+                opacity: 0;
+                transform: translateY(100%);
+                color: #fff;
+                text-shadow: 0px 5px 21px rgba(0, 0, 0, 0.11);
+                font-size: 55px;
+                font-weight: 600;
+                line-height: 73px;
+              }
+            }
+          }
+        }
+      }
+      @media (max-aspect-ratio: 1440/863) {
+        .wrapperBig {
+          .wrapper {
+            height: 100vh;
+            width: fit-content;
+            .image {
+              height: 100%;
+              width: fit-content;
+            }
+          }
+        }
+      }
+    }
+    .bottomTextContainer {
+      position: absolute;
+      bottom: 27px;
+      left: 9.02%;
+      .box {
+        width: 37.56vw;
+        height: fit-content;
+        display: flex;
+        align-items: center;
+        margin-bottom: 21px;
+
+        .heading {
+          overflow: hidden;
+
+          .text {
+            opacity: 0;
+            transform: translateY(100%);
+            margin-right: 10px;
+            color: #fff;
+            text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.12);
+            font-size: 4vw;
+            font-weight: 300;
+            line-height: 145.267%;
+          }
+        }
+
+        .icon {
+          display: flex;
+          align-items: center;
+          cursor: pointer;
+
+          .circle {
+            position: relative;
+            .circle2 {
+              background-color: rgba($color: #000000, $alpha: 0.3);
+              width: 59px;
+              height: 59px;
+              border: 1px solid #bcbcbc;
+              border-radius: 50%;
+            }
+            .lineWrap {
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%) rotate(-45deg);
+              transition: all 0.3s ease-in-out;
+              padding-right: 5px;
+
+              .line {
+                width: 10px;
+                height: 1px;
+                background-color: #f2f2f2;
+                transition: all 0.3s ease-in-out;
+              }
+            }
+
+            .arrow {
+              height: 20px;
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%) rotate(-45deg);
+              transition: all 0.3s ease-in-out;
+            }
+          }
+          .circle:hover {
+            .arrow {
+              padding-left: 80px;
+              transform: translate(-50%, -50%) rotate(-45deg);
+            }
+            .lineWrap {
+              padding-left: 28px;
+              .line {
+                width: 42px;
+              }
+            }
+          }
+        }
+      }
+      .pageNumbers {
+        display: flex;
+        width: fit-content;
+        height: fit-content;
+        align-items: center;
+        .number {
+          display: flex;
+          align-items: center;
+          cursor: pointer;
+          color: #fff;
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 19px;
+          opacity: 0.5;
+        }
+        .active {
+          opacity: 1;
+        }
+        .line {
+          width: 13px;
+          height: 2px;
+          border: 2px solid #fff;
+          margin-right: 5px;
+          margin-left: 5px;
+          transition: all 0.3s ease-in-out;
+        }
+        .activeLine {
+          width: 47px;
+        }
+      }
+    }
+  }
+  .sideBox {
+    position: absolute;
+    right: 0;
+    z-index: 2;
+    bottom: -63px;
+  }
+  .sideBoxMobile {
+    display: none;
+  }
+}
+@media (max-width: 1024px) {
+  .Homepage {
+    .HomeLCM {
+      .contentContainer {
+        .mainText {
+          width: 37.72vw;
+          .title {
+            font-size: 8.4vw;
+          }
+          .subtitle {
+            font-size: 4.7vw;
+          }
+        }
+      }
+      .bottomTextContainer {
+        .box {
+          width: 45.56vw;
+          .text {
+            font-size: 5.4vw;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .Homepage {
+    .HomeLCM {
+      .slider {
+        .wrapperBig {
+          .wrapper {
+            left: 60%;
+          }
+          .contentContainer {
+            padding-left: 20.15px;
+            padding-top: 15vh;
+            justify-content: unset;
+            .mainText {
+              width: 88.33vw;
+              margin-bottom: 20vh;
+              .heading {
+                .title {
+                  font-size: 67px;
+                  line-height: 89px;
+                  @media (max-width: 500px) {
+                    font-size: 55px;
+                  }
+                }
+                .subtitle {
+                  font-size: 37px;
+                  @media (max-width: 500px) {
+                    font-size: 9vw;
+                  }
+                }
+              }
+            }
+          }
+        }
+        @media (max-aspect-ratio: 1440/863) {
+          .wrapperBig {
+            .wrapper {
+              height: 100vh;
+              width: fit-content;
+              .image {
+                height: 100%;
+                width: fit-content;
+              }
+            }
+          }
+        }
+      }
+      .bottomTextContainer {
+        left: 20.15px;
+        bottom: 87px;
+        .box {
+          width: 280px;
+          height: fit-content;
+          margin-bottom: 0px;
+          .heading {
+            .text {
+              font-size: 33.609px;
+              line-height: 48.823px;
+            }
+          }
+          .icon {
+            .circle {
+              .circle2 {
+                width: 30px;
+                height: 30px;
+              }
+              .arrow {
+                top: 49%;
+                left: 46%;
+                svg {
+                  height: 9px;
+                }
+              }
+            }
+            .circle:hover {
+              .arrow {
+                padding-left: 38px;
+              }
+              .lineWrap {
+                padding-left: 18px;
+                .line {
+                  width: 32px;
+                }
+              }
+            }
+          }
+        }
+        .pageNumbers {
+          width: 120px;
+          height: fit-content;
+          .number1,
+          .number2,
+          .number3 {
+            font-size: 9.597px;
+            line-height: 71.696px;
+          }
+          .line1,
+          .line2 {
+            width: 32px;
+          }
+          .line2 {
+            width: 9px;
+          }
+        }
+      }
+    }
+    .sideBox {
+      display: none;
+    }
+    .sideBoxMobile {
+      display: block;
+      z-index: 2;
+      position: absolute;
+      top: 109%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+}

@@ -1,0 +1,49 @@
+.DesignSlide4 {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  width: 100vw;
+  height: fit-content;
+  padding: 50px 8.75vw 323px 8.95vw;
+  background: #f9f5f2;
+
+  .contentDiv {
+    padding-top: 58px;
+  }
+  .imageContainer {
+    position: relative;
+    width: 41.73vw;
+    height: fit-content;
+    .image {
+      width: 100%;
+      height: auto;
+      object-fit: contain;
+    }
+    .playIcon {
+      position: absolute;
+      left: 25px;
+      bottom: 14px;
+      svg {
+        circle {
+          fill: #b89774;
+        }
+      }
+
+      @media (max-width: 900px) {
+        display: none;
+      }
+    }
+  }
+}
+@media (max-width: 900px) {
+  .DesignSlide4 {
+    padding: 0px 23px 172px 23px;
+    background: #f9f5f2;
+    .contentDiv {
+      padding-top: 0;
+    }
+    .imageContainer {
+      display: none;
+    }
+  }
+}

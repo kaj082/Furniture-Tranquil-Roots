@@ -1,0 +1,271 @@
+.FactorySlide3 {
+  width: 100vw;
+  height: fit-content;
+
+  padding-left: 13.13%;
+
+  .details {
+    width: 100%;
+    padding-right: 13.26%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 120px;
+
+    .title {
+      width: 40.75%;
+      max-width: 558px;
+      color: #09214d;
+      text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.08);
+      font-size: clamp(40px, 3vw, 48px);
+      font-style: normal;
+      font-weight: 700;
+      line-height: 132.037%;
+      text-transform: capitalize;
+    }
+    .description {
+      width: 45.41%;
+      max-width: 438px;
+      height: fit-content;
+      color: #7b7b7b;
+      font-size: 15px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 180%;
+      text-transform: capitalize;
+    }
+  }
+
+  .imageContent {
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    .title {
+      width: 198px;
+      padding-right: 61px;
+      height: 51px;
+      color: #09214d;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 180%;
+      text-transform: capitalize;
+    }
+
+    .container {
+      width: fit-content;
+      height: fit-content;
+      display: flex;
+      .box {
+        width: 314px;
+        height: 314px;
+        background-color: #b89774;
+        padding: 24px 20px 39px 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .boxTitle {
+          color: #fff;
+          font-size: 31px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 38.4px;
+        }
+        .boxDesc {
+          color: #fff;
+          font-size: 15px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 180%;
+          text-transform: capitalize;
+        }
+      }
+      .imageContainer {
+        width: 70%;
+        height: 314px;
+        position: relative;
+
+        img {
+          width: 100%;
+          height: 314px;
+          object-fit: cover;
+        }
+        .video {
+          position: absolute;
+          bottom: 22px;
+          left: 30px;
+
+          svg {
+            path {
+              fill: #000000;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .BtnWithContent {
+    width: 100%;
+    height: fit-content;
+    margin-top: 112px;
+    margin-bottom: 92px;
+    padding-right: 9.8%;
+
+    .title1 {
+      width: 259px;
+      height: 51px;
+      margin-bottom: 43px;
+
+      color: #09214d;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 180%;
+      text-transform: capitalize;
+    }
+    .contentBtn {
+      width: 100%;
+      height: fit-content;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .title2 {
+        max-width: 778px;
+        width: 54%;
+        color: #09214d;
+        text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.08);
+        font-size: clampl(40px, 3vw, 48px);
+        font-style: normal;
+        font-weight: 700;
+        line-height: 132.037%;
+        text-transform: capitalize;
+      }
+      .btn {
+        width: 150px;
+      }
+    }
+  }
+
+  @media (max-width: 1440px) {
+    padding-left: 8.9%;
+  }
+}
+
+@media (max-width: 900px) {
+  .FactorySlide3 {
+    width: 100vw;
+    height: fit-content;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    .details {
+      width: 100%;
+      padding-right: 33px;
+      justify-content: unset;
+      flex-direction: column;
+      margin-bottom: 120px;
+
+      .title {
+        margin-bottom: 29px;
+        width: 100%;
+        max-width: 100%;
+        font-size: 30px;
+        text-align: center;
+      }
+      .description {
+        width: 100%;
+        max-width: 100%;
+        font-size: 14px;
+        text-align: center;
+      }
+    }
+
+    .imageContent {
+      height: fit-content;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .title {
+        width: fit-content;
+        height: fit-content;
+        margin-bottom: 42px;
+        padding-right: 0;
+      }
+
+      .container {
+        flex-direction: column;
+        .box {
+          width: 100%;
+          height: fit-content;
+          background: #b89774;
+          padding: 38px 20px;
+          justify-content: unset;
+
+          .boxTitle {
+            margin-bottom: 16px;
+          }
+        }
+        .imageContainer {
+          width: 100%;
+          height: fit-content;
+          position: relative;
+
+          img {
+            width: 100%;
+            height: auto;
+            object-fit: contain;
+          }
+          .video {
+            position: absolute;
+            bottom: unset;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+          }
+        }
+      }
+    }
+
+    .BtnWithContent {
+      padding-right: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .title1 {
+        width: fit-content;
+        height: fit-content;
+        margin-bottom: 45px;
+      }
+      .contentBtn {
+        width: 100%;
+        flex-direction: column;
+        justify-content: unset;
+
+        .title2 {
+          max-width: 100%;
+          width: 100%;
+          color: #2d2d2d;
+          text-align: center;
+          text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.08);
+          font-size: 30px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 132.037%;
+          text-transform: capitalize;
+        }
+        .btn {
+          margin-top: 45px;
+          margin-bottom: 45px;
+          width: 100%;
+        }
+      }
+    }
+  }
+}

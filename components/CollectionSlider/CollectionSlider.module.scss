@@ -1,0 +1,202 @@
+.CollectionSlider {
+  width: 100vw;
+  height: fit-content;
+  padding-top: 297px;
+  padding-left: 9.4%;
+  padding-right: 9.4%;
+  display: flex;
+  position: relative;
+
+  .imageContent {
+    margin-right: 20px;
+    width: 79.72vw;
+    height: fit-content;
+    position: relative;
+
+    .slider {
+      height: fit-content;
+      width: 100%;
+      position: relative;
+
+      .wrapperBig {
+        width: 100%;
+        height: fit-content;
+
+        .wrapper {
+          width: 100%;
+          height: fit-content;
+          transition: all 0.4s ease-in-out;
+          overflow: hidden;
+          .image {
+            transition: all 0.4s ease-in-out;
+            width: 100%;
+            height: fit-content;
+            object-fit: contain;
+          }
+          .Mobileimage {
+            display: none;
+          }
+        }
+        .wrapper:hover {
+          .image {
+            scale: 1.05;
+          }
+        }
+      }
+    }
+
+    .details {
+      width: 100%;
+      height: fit-content;
+      margin-top: 15px;
+
+      .title1 {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 7px;
+
+        .title {
+          color: #000;
+          font-size: 18px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: 143%;
+          text-transform: capitalize;
+        }
+        .btn {
+          cursor: pointer;
+          display: flex;
+          width: 127px;
+          justify-content: space-between;
+
+          .btnText {
+            color: #b89774;
+            font-size: 15px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 143%;
+            text-transform: capitalize;
+          }
+        }
+      }
+      .description {
+        color: #686868;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 180%;
+        text-transform: capitalize;
+      }
+    }
+    .pageNumbers {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 10px;
+      height: 60px;
+      align-items: center;
+      right: -22.5px;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+
+      .active {
+        svg {
+          path {
+            fill: #d9d9d9;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .CollectionSlider {
+    width: 100%;
+    height: fit-content;
+    padding-top: 90px;
+    padding-left: 20px;
+    padding-right: 25px;
+    display: flex;
+
+    .imageContent {
+      margin-right: 0;
+      width: 100%;
+      height: fit-content;
+
+      .slider {
+        height: fit-content;
+        width: 97%;
+
+        .wrapperBig {
+          width: 100%;
+          height: fit-content;
+
+          .wrapper {
+            width: 100%;
+            height: fit-content;
+
+            .image {
+              display: none;
+            }
+            .Mobileimage {
+              display: block;
+              width: 100%;
+              height: fit-content;
+              object-fit: contain;
+            }
+          }
+        }
+      }
+
+      .details {
+        width: 100%;
+        height: fit-content;
+
+        .title1 {
+          width: 100%;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          margin-bottom: 7px;
+          margin-top: 22px;
+
+          .title {
+            font-size: 17px;
+          }
+
+          .btn {
+            display: flex;
+            width: fit-content;
+            justify-content: unset;
+
+            .btnText {
+              padding-right: 11px;
+              font-size: 13px;
+            }
+          }
+        }
+      }
+      .pageNumbers {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 10px;
+        height: 60px;
+        align-items: center;
+        right: -1.5%;
+        position: absolute;
+        top: 35%;
+        .active {
+          svg {
+            path {
+              fill: #d9d9d9;
+            }
+          }
+        }
+      }
+    }
+  }
+}

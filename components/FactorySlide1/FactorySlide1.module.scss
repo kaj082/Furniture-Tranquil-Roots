@@ -1,0 +1,204 @@
+.FactorySlide1 {
+  width: 100vw;
+  height: fit-content;
+  position: relative;
+
+  .imageConatiner {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+
+    .background {
+      width: fit-content;
+      height: fit-content;
+      position: absolute;
+      bottom: -27px;
+      right: 0;
+      z-index: 3;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+
+      @media (max-width: 900px) {
+        display: none;
+      }
+    }
+
+    .wrapperBig {
+      width: 100vw;
+      height: 100vh;
+      overflow: hidden;
+      position: relative;
+      .wrapper {
+        width: 100vw;
+        height: fit-content;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        .image {
+          width: 100%;
+          height: fit-content;
+          object-fit: contain;
+        }
+      }
+
+      @media (max-width: 900px) {
+        .wrapper {
+          width: 100vw;
+          height: fit-content;
+          position: absolute;
+          top: 0;
+          left: 0;
+          transform: unset;
+          .image {
+            width: auto;
+            height: 100%;
+            object-fit: contain;
+          }
+        }
+      }
+    }
+
+    @media (max-aspect-ratio: 2161/1226) {
+      .wrapperBig {
+        .wrapper {
+          height: 100vh;
+          width: fit-content;
+          .image {
+            height: 100%;
+            width: fit-content;
+          }
+        }
+      }
+    }
+
+    .gradient {
+      top: 0;
+      position: absolute;
+      z-index: 1;
+      width: 100vw;
+      height: 100vh;
+      opacity: 0.5;
+      background: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0) 0%,
+        rgba(0, 0, 0, 0.6) 100%
+      );
+    }
+  }
+
+  .activetext {
+    display: none;
+  }
+
+  .textContainer {
+    z-index: 2;
+    width: fit-content;
+    height: fit-content;
+    position: absolute;
+    top: 50%;
+    left: 146px;
+    .titleContainer {
+      overflow: hidden;
+      .text2 {
+        width: 518.681px;
+        height: fit-content;
+        color: #fff;
+        text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.25);
+        font-size: 65px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 132.037%;
+        text-transform: capitalize;
+        transform: translateY(100%);
+        @media (max-width: 900px) {
+          display: none;
+        }
+      }
+    }
+
+    .dash {
+      margin-top: 78px;
+      display: flex;
+      align-items: center;
+      width: fit-content;
+      justify-content: space-between;
+      height: fit-content;
+
+      .Views1 {
+        width: 112px;
+        height: fit-content;
+        margin-right: 54px;
+
+        .number {
+          color: #fff;
+          text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.08);
+          font-size: 36px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: 132.037%;
+          text-transform: capitalize;
+        }
+
+        .info {
+          color: #fff;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: 28.5px;
+          letter-spacing: -0.016px;
+        }
+      }
+      .mobileTitleContainer {
+        display: none;
+        @media (max-width: 900px) {
+          display: block;
+          overflow: hidden;
+          margin-bottom: 82px;
+
+          .text2Mobile {
+            margin-top: 26px;
+            font-size: 44px;
+            line-height: 132.037%;
+            // height: 108px;
+            width: 100%;
+            height: fit-content;
+            color: #fff;
+            text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.25);
+            font-style: normal;
+            font-weight: 600;
+            text-transform: capitalize;
+            transform: translateY(100%);
+          }
+        }
+      }
+      .btn {
+        width: 157px;
+        @media (max-width: 500px) {
+          width: 100%;
+        }
+      }
+      @media (max-width: 900px) {
+        margin-top: 0x;
+        width: 100%;
+        flex-direction: column;
+        justify-content: unset;
+        align-items: baseline;
+      }
+    }
+
+    @media (max-width: 900px) {
+      top: 60%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 100%;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  }
+}

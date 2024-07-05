@@ -1,0 +1,55 @@
+.PrimaryLayout {
+  width: 100vw;
+
+  overflow: hidden;
+  height: fit-content;
+
+  .background {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    z-index: 7;
+    background-color: #3a4266;
+
+    transform: translate(0, 0);
+  }
+  .logo {
+    position: absolute;
+    margin-top: 29px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: fit-content;
+    height: fit-content;
+    opacity: 1;
+    z-index: 8;
+    .back {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      left: 0%;
+      top: 0;
+      opacity: 1;
+      z-index: 9;
+      background-color: #3a4266;
+    }
+    .back1 {
+      position: absolute;
+      width: 100%;
+      height: 100px;
+      left: 0%;
+      top: 100%;
+      opacity: 1;
+      z-index: 9;
+      background-color: #3a4266;
+    }
+
+    @media (max-width: 900px) {
+      top: 40vh;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+}

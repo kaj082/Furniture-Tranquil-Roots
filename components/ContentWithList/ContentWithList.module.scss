@@ -1,0 +1,74 @@
+.ContentWithList {
+  width: 38.19vw;
+  height: fit-content;
+  .title {
+    color: #09214d;
+    text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.08);
+    font-size: 3.2vw;
+    font-weight: 700;
+    line-height: 132.037%;
+    margin-bottom: 15.4px;
+  }
+  .imageContainer {
+    display: none;
+  }
+  .description {
+    width: 37.22vw;
+    color: #7b7b7b;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 180%;
+    padding-left: 4px;
+    margin-bottom: 35.7px;
+  }
+  .button {
+    margin-top: 12px;
+    .text:hover {
+      color: #b89774;
+    }
+  }
+}
+@media (max-width: 900px) {
+  .ContentWithList {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    // justify-content: center;
+    .title {
+      color: #2d2d2d;
+      font-size: 30px;
+      margin-bottom: 45px;
+      text-align: center;
+    }
+    .imageContainer {
+      position: relative;
+      display: block;
+      width: 100%;
+      height: fit-content;
+      margin-bottom: 45px;
+      .image {
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+      }
+      .playIcon {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+    .description {
+      width: 100%;
+      color: #7b7b7b;
+      font-size: 15px;
+      padding-left: 0;
+      margin-bottom: 45px;
+    }
+    .button {
+      display: flex;
+      justify-content: center;
+      margin-top: 45px;
+    }
+  }
+}

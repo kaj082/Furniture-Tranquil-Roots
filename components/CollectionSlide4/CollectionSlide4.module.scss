@@ -1,0 +1,138 @@
+.CollectionSlide4 {
+  width: 100%;
+  padding-left: 10.27%;
+  padding-right: 11.25%;
+  padding-top: 25vh;
+  padding-bottom: 25vh;
+
+  display: flex;
+  justify-content: space-between;
+
+  .imageContainer {
+    width: 50.48%;
+    height: fit-content;
+    padding-right: 20px;
+    position: relative;
+
+    .slider {
+      .image {
+        width: 100%;
+        height: fit-content;
+        object-fit: contain;
+      }
+    }
+
+    .arrows {
+      width: 115px;
+      height: 62px;
+      background-color: #f2f2f2;
+      position: absolute;
+      bottom: 5px;
+      right: 20px;
+      z-index: 2;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+
+      .prevArr {
+        width: 58px;
+        height: 100%;
+        background-color: #f2f2f2;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .prevArr:hover {
+        background-color: #e4e4e4;
+      }
+      .line {
+        width: 1px;
+        height: 30px;
+        background-color: #000;
+      }
+
+      .nextArr {
+        cursor: pointer;
+        background-color: #f2f2f2;
+        width: 58px;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .nextArr:hover {
+        background-color: #e4e4e4;
+      }
+    }
+  }
+  .mobileTitle {
+    display: none;
+  }
+  .detailsContainer {
+    display: flex;
+    flex-direction: column;
+    width: 416px;
+    .title {
+      margin-bottom: 31px;
+      color: #000;
+      font-size: 30px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 40px;
+    }
+    .dropDown {
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .CollectionSlide4 {
+    padding-left: 20px;
+    padding-right: 20px;
+    flex-direction: column;
+    align-items: center;
+
+    .mobileTitle {
+      display: block;
+      margin-bottom: 52px;
+      color: #000;
+      font-size: 30px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 40px;
+      text-align: center;
+    }
+
+    .imageContainer {
+      width: 100%;
+      height: fit-content;
+      padding-right: 0;
+      margin-bottom: 52px;
+      img {
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+      }
+      .arrows {
+        position: absolute;
+        bottom: 5px;
+        right: 0;
+      }
+    }
+
+    .detailsContainer {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      .title {
+        display: none;
+      }
+
+      .dropDown {
+        width: 100%;
+      }
+    }
+  }
+}
