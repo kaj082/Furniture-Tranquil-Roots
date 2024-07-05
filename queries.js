@@ -3,7 +3,7 @@ import { gql } from "@apollo/client";
 export const getFatoryPageData = () => ({
   query: gql`
     query {
-      factoryPage(id: "1t9Gym8SX8mpa1yCsd5Pw9") {
+      factoryPage(id: "Ui0zHkqNL47dz7zdDAFCe") {
         slide1Title
         slide1Desc {
           heading
@@ -13,7 +13,9 @@ export const getFatoryPageData = () => ({
           width
           height
           title
-          url
+          url {
+            url
+          }
         }
         slide1Button {
           text
@@ -23,7 +25,9 @@ export const getFatoryPageData = () => ({
           width
           height
           title
-          url
+          url {
+            url # Assuming this directly returns the URL string
+          }
         }
         slide2Heading {
           heading
@@ -34,7 +38,6 @@ export const getFatoryPageData = () => ({
           text
           url
         }
-
         slide3Heading {
           heading
           desb
@@ -44,7 +47,9 @@ export const getFatoryPageData = () => ({
           width
           height
           title
-          url
+          url {
+            url
+          }
         }
         slide3Subtitle {
           heading
@@ -62,9 +67,12 @@ export const getFatoryPageData = () => ({
           width
           height
           title
-          url
+          url {
+            url
+          }
         }
-        slide4ServicesCollection(limit: 4) {
+        slide4ServicesCollectionCollection(limit: 4) {
+          # Corrected field name
           items {
             heading
             desb
