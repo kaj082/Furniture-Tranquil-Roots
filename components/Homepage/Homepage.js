@@ -120,7 +120,7 @@ const Homepage = ({ slide1Data }) => {
       <div className={styles.HomeLCM}>
         <Slider ref={sliderRef} {...settings} className={styles.slider}>
           {slide1Collection.map((item, index) => {
-            const imgage = item?.image.url;
+            const imgage = item?.image.url.url;
             const width = item?.image.width;
             const height = item?.image.height;
             const title = item.heading1;
@@ -147,7 +147,7 @@ const Homepage = ({ slide1Data }) => {
                           itemRef.current[index] = item;
                         }}
                       >
-                        {title[0]}
+                        {"Tranquil Roots"}
                       </h1>
                     </div>
                     <div className={styles.heading}>
@@ -157,7 +157,7 @@ const Homepage = ({ slide1Data }) => {
                           subtitleRef.current[index] = item;
                         }}
                       >
-                        {title[1]}
+                        {"Home Furnishing"}
                       </p>
                     </div>
                   </div>

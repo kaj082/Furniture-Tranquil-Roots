@@ -48,7 +48,7 @@ const HomeSideBox = ({ data }) => {
       </div>
       <div className={styles.imageContainer}>
         {map(data, (item, index) => {
-          const imgage = item?.url;
+          const imgage = item?.url.url;
           const width = item?.width;
           const height = item?.height;
 

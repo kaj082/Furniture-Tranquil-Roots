@@ -10,7 +10,10 @@
 
   .logo {
     margin-top: 23vh;
-    margin-bottom: 10vh;
+    margin-bottom: 8vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   .itemList1 {
     max-width: 43.26vw;

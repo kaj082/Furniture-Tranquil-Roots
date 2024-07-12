@@ -15,7 +15,6 @@ import { useRouter } from "next/router";
 gsap.registerPlugin(ScrollTrigger);
 
 const HomepageSlide2 = ({ data }, ref) => {
-
   const singleSlideRef = useRef(null);
 
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -106,9 +105,9 @@ const HomepageSlide2 = ({ data }, ref) => {
         </Link>
       </div>
       <div className={styles.imageSection}>
-        <Slider {...settings} className={styles.slider} ref={singleSlideRef}>
+        {/* <Slider {...settings} className={styles.slider} ref={singleSlideRef}>
           {map(data.slide2SliderCollection, (item, index) => {
-            const imgage = item?.image.url;
+            const imgage = item?.image.url?.url;
             const width = item?.image.width;
             const height = item?.image.height;
 
@@ -123,8 +122,8 @@ const HomepageSlide2 = ({ data }, ref) => {
               />
             );
           })}
-        </Slider>
-        <Slider {...settings} className={styles.mobileSlider}>
+        </Slider> */}
+        {/* <Slider {...settings} className={styles.mobileSlider}>
           {map(data.slide2SliderCollection, (item, index) => {
             const imgage = item?.image.url;
             const width = item?.image.width;
@@ -142,7 +141,7 @@ const HomepageSlide2 = ({ data }, ref) => {
               </div>
             );
           })}
-        </Slider>
+        </Slider> */}
         <div className={styles.pageNumbers}>
           {map(number, (item, index) => (
             <div

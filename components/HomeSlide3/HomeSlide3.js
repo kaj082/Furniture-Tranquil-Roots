@@ -54,6 +54,7 @@ const HomeSlide3 = ({ data }) => {
       animation.current?.kill();
     };
   }, []);
+  console.log(data, "--");
 
   return (
     <div className={styles.HomeSlide3} ref={mainRef}>
@@ -63,7 +64,7 @@ const HomeSlide3 = ({ data }) => {
         </div> */}
         <Image
           className={styles.image}
-          src={data.slide3Asset.url}
+          src={data.slide3Asset.url.url}
           width={data.slide3Asset.width}
           height={data.slide3Asset.height}
           alt=""
@@ -78,9 +79,9 @@ const HomeSlide3 = ({ data }) => {
               </div>
               <div className={styles.dash2}></div>
             </div>
-            <h1 className={styles.title}>{data.slide3Heading[0]} </h1>
+            <h1 className={styles.title}>{data.slide3Heading.heading} </h1>
           </div>
-          <h1 className={styles.title2}>{data.slide3Heading[1]}</h1>
+          <h1 className={styles.title2}>{data.slide3Heading.desb}</h1>
         </div>
 
         <div className={styles.commaSvg}>

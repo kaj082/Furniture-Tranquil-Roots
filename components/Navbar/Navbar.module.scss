@@ -27,9 +27,12 @@
   }
 
   .logo {
-    width: 41.25px;
-    height: 42px;
+    // width: 41.25px;
+    // height: 42px;
     cursor: pointer;
+    align-items: center;
+    display: flex;
+    justify-content: center;
   }
   .navList {
     width: 38.09vw;

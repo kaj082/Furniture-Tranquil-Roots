@@ -87,7 +87,7 @@ const HomeSlide4 = ({ data }) => {
 
         <div className={styles.imageContainer} ref={imageRef}>
           <Image
-            src={data.slide4Image.url}
+            src={data.slide4Image.url.url}
             width={data.slide4Image.width}
             height={data.slide4Image.height}
             alt=""
@@ -96,7 +96,7 @@ const HomeSlide4 = ({ data }) => {
       </div>
       <div className={styles.imageContainer}>
         <Image
-          src={data.slide5Image.url}
+          src={data.slide5Image.url.url}
           width={data.slide5Image.width}
           height={data.slide5Image.height}
           alt=""

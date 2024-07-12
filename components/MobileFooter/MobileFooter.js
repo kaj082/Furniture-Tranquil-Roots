@@ -138,21 +138,21 @@ const MobileFooter = () => {
         <div className={styles.address1}>
           <div className={styles.address}>Address 1</div>
           <div className={styles.line1}>
-            Nice Link Store, 45 West, New York, USA
+            Tranquil Roots Store, 45 West, New York, USA
           </div>
-          <div className={styles.line2}>+01 647543757</div>
+          <div className={styles.line2}>+91 647543757</div>
         </div>
 
         <div className={styles.address2}>
           <div className={styles.address}>Address 2</div>
           <div className={styles.line1}>
-            Nice Link Store, 45 West, New York, USA
+            Tranquil Roots Store, 45 West, New York, USA
           </div>
-          <div className={styles.line2}>+01 647543757</div>
+          <div className={styles.line2}>+91 647543757</div>
         </div>
       </div>
       <div className={styles.termsCondition}>
-        <div className={styles.terms}>©2019 Nice Link Home Furnishings</div>
+        <div className={styles.terms}>©2019 Tranquil Roots</div>
         <div className={styles.terms}>
           <a href="/privacy">Privacy</a> |{" "}
           <a href="/Term-and-conditions">T & C</a>

@@ -64,22 +64,23 @@ export async function getStaticProps() {
   //
 
   const slide1Data = {
-    slide1Collection: homePage.slide1Collection.items,
-    slide1ExplorerCollection: homePage.slide1ExplorerCollection.items,
+    slide1Collection: homePage.slide1CollectionCollection.items,
+    slide1ExplorerCollection: homePage.slide1ExplorerCollectionCollection.items,
   };
 
   const slide2Data = {
     slide2Title: homePage.slide2Title,
     slide2Button: homePage.slide2Button,
     slide2Desb: homePage.slide2Desb,
-    slide2SliderCollection: homePage.slide2SliderCollection.items,
+    slide2SliderCollection: homePage.slide2SliderCollectionCollection.items,
   };
 
   const slide3Data = {
     slide3Asset: homePage.slide3Asset,
-    slide3ButtonsCollection: homePage.slide3ButtonsCollection.items,
+    slide3ButtonsCollection: homePage.slide3ButtonsCollectionCollection.items,
     slide3Heading: homePage.slide3Heading,
-    slide3DropdownListsCollection: homePage.slide3DropdownListsCollection.items,
+    slide3DropdownListsCollection:
+      homePage.slide3DropdownListsCollectionCollection.items,
   };
 
   const slide4Data = {
@@ -87,11 +88,11 @@ export async function getStaticProps() {
     slide4Image: homePage.slide4Image,
     slide4Info: homePage.slide4Info,
     slide5Image: homePage.slide5Image,
-    slide5InfoCollection: homePage.slide5InfoCollection.items,
+    slide5InfoCollection: homePage.slide5InfoCollectionCollection.items,
   };
 
   const slide5Data = {
-    slide6SliderCollection: homePage.slide6SliderCollection.items,
+    slide6SliderCollection: homePage.slide6SliderCollectionCollection.items,
   };
 
   return {

@@ -400,65 +400,80 @@ export const getCollectionPageData = () => ({
 export const getHomePageData = () => ({
   query: gql`
     query {
-      homePage(id: "77iwIHC6eFTGEQdZaaEALi") {
-        slide1Collection(limit: 10) {
+      homePage(id: "12xbkiEqakH4oP0grt3FVz") {
+        slide1CollectionCollection(limit: 10) {
           items {
             image {
-              url
               width
               height
+              url {
+                url
+              }
             }
-            heading1
+            heading1 {
+              heading
+              desb
+            }
             linkText {
               text
               url
             }
           }
         }
-        slide1ExplorerCollection(limit: 10) {
+        slide1ExplorerCollectionCollection(limit: 3) {
           items {
-            url
             width
             height
+            url {
+              url
+            }
           }
         }
-        slide2Title
         slide2Desb
+
+        slide2Title
         slide2Button {
           text
           url
         }
-        slide2SliderCollection(limit: 10) {
+        slide2SliderCollectionCollection(limit: 3) {
           items {
-            image {
+            width
+            height
+            url {
               url
-              width
-              height
             }
           }
         }
         slide3Asset {
-          url
           width
           height
+          url {
+            url
+          }
         }
-        slide3Heading
-        slide3DropdownListsCollection(limit: 10) {
+        slide3Heading {
+          heading
+          desb
+        }
+        slide3DropdownListsCollectionCollection(limit: 3) {
           items {
             heading
             desb
           }
         }
-        slide3ButtonsCollection(limit: 10) {
+        slide3ButtonsCollectionCollection(limit: 3) {
           items {
             text
             url
           }
         }
         slide4Image {
-          url
           width
           height
+          url {
+            url
+          }
         }
         slide4Info {
           heading
@@ -469,24 +484,31 @@ export const getHomePageData = () => ({
           url
         }
         slide5Image {
-          url
           width
           height
+          url {
+            url
+          }
         }
-        slide5InfoCollection(limit: 10) {
+        slide5InfoCollectionCollection(limit: 3) {
           items {
             heading
             desb
           }
         }
-        slide6SliderCollection(limit: 10) {
+        slide6SliderCollectionCollection(limit: 3) {
           items {
             image {
-              url
               width
               height
+              url {
+                url
+              }
             }
-            heading1
+            heading1 {
+              heading
+              desb
+            }
             linkText {
               url
             }

@@ -12,7 +12,7 @@ const HomeSideBoxMobile = ({ data }) => {
       <p className={styles.text}>EXPLORE LATEST</p>
       <div className={styles.imageContainer}>
         {map(data, (item, index) => {
-          const imgage = item?.url;
+          const imgage = item?.url.url;
           const width = item?.width;
           const height = item?.height;
 
