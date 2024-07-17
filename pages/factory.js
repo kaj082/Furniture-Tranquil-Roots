@@ -53,7 +53,7 @@ export default factory;
 
 export const getStaticProps = async () => {
   const data = await client.query(getFatoryPageData());
-  console.log(data, "dataaaaa");
+
   const factoryPage = data.data.factoryPage;
   const slide1Data = {
     slide1Button: factoryPage.slide1Button,

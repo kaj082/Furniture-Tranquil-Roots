@@ -65,8 +65,8 @@ export async function getStaticProps() {
   //
 
   const slide1Data = {
-    slide1Collection: aboutpage.slide1Collection.items,
-    aboutBoxCollection: aboutpage.aboutBoxCollection.items,
+    slide1Collection: aboutpage.slide1CollectionCollection.items,
+    aboutBoxCollection: aboutpage.aboutBoxCollectionCollection.items,
   };
 
   const slide2Data = {
@@ -80,15 +80,16 @@ export async function getStaticProps() {
 
   const slide3Data = {
     slide4Title1: aboutpage.slide4Title1,
-    slide4ViewsCollection: aboutpage.slide4ViewsCollection.items,
+    slide4ViewsCollection: aboutpage.slide4ViewsCollectionCollection.items,
   };
 
   const slide4Data = {
     slide5Button: aboutpage.slide5Button,
     slide5Details: aboutpage.slide5Details,
     slide5Image: aboutpage.slide5Image,
-    slide6DropdownCollection: aboutpage.slide6DropdownCollection.items,
-    slide6Image1Collection: aboutpage.slide6Image1Collection.items,
+    slide6DropdownCollection:
+      aboutpage.slide6DropdownCollectionCollection.items,
+    slide6Image1Collection: aboutpage.slide6Image1CollectionCollection.items,
     slide6Title: aboutpage.slide6Title,
   };
 

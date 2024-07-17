@@ -7,7 +7,7 @@ const AboutSlide2 = ({ data }, ref) => {
     <div className={styles.AboutSlide2} ref={ref}>
       <div className={styles.slide1}>
         <ImageDetailContainer
-          image={data.slide2Image.url}
+          image={data.slide2Image.url.url}
           width={data.slide2Image.width}
           height={data.slide2Image.height}
           row={true}
@@ -18,7 +18,7 @@ const AboutSlide2 = ({ data }, ref) => {
           lady={true}
         />
         <MobileImageDetailContainer
-          image={data.slide2Image.url}
+          image={data.slide2Image.url.url}
           width={data.slide2Image.width}
           height={data.slide2Image.height}
           row={true}
@@ -33,7 +33,7 @@ const AboutSlide2 = ({ data }, ref) => {
 
       <div className={styles.slide2}>
         <ImageDetailContainer
-          image={data.slide3Image.url}
+          image={data.slide3Image.url.url}
           width={data.slide3Image.width}
           height={data.slide3Image.height}
           description1={data.slide3Details.desb}
@@ -43,7 +43,7 @@ const AboutSlide2 = ({ data }, ref) => {
         />
 
         <MobileImageDetailContainer
-          image={data.slide3Image.url}
+          image={data.slide3Image.url.url}
           width={data.slide3Image.width}
           height={data.slide3Image.height}
           description1={data.slide3Details.desb}

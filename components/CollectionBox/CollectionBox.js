@@ -33,7 +33,6 @@ const CollectionBox = ({ Asindividual, data }) => {
   return (
     <div className={cx(styles.CollectionBox, { [styles.box]: Asindividual })}>
       {map(data?.items, (item, index) => {
-        console.log(item, "item");
         return (
           <div className={styles.box1} key={index} ref={addToRefs}>
             <div className={styles.imageContainer}>

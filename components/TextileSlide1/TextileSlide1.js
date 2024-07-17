@@ -81,7 +81,7 @@ const TextileSlide1 = ({ data }) => {
 
       <div className={styles.imageContainer}>
         <Image
-          src={data.slide1Image.url}
+          src={data.slide1Image.url.url}
           width={data.slide1Image.width}
           height={data.slide1Image.height}
           alt=""

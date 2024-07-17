@@ -50,7 +50,7 @@ const TextileSlide3 = ({ data }) => {
       <div className={styles.Slide1}>
         <ImageDetailContainer
           description1={data.slide3Heading.desb}
-          image={data.slide3Image.url}
+          image={data.slide3Image.url.url}
           width={data.slide3Image.width}
           height={data.slide3Image.height}
           title={data.slide3Heading.heading}
@@ -61,7 +61,7 @@ const TextileSlide3 = ({ data }) => {
         <MobileImageDetailContainer
           link={data.slide3Button.url}
           description1={data.slide3Heading.desb}
-          image={data.slide3Image.url}
+          image={data.slide3Image.url.url}
           width={data.slide3Image.width}
           height={data.slide3Image.height}
           title={data.slide3Heading.heading}
@@ -74,7 +74,7 @@ const TextileSlide3 = ({ data }) => {
         <Image
           // ref={slide2Ref}
           className={styles.imageContainer}
-          src={data.slide4Image.url}
+          src={data.slide4Image.url.url}
           width={data.slide4Image.width}
           height={data.slide4Image.height}
           alt=""
@@ -90,7 +90,7 @@ const TextileSlide3 = ({ data }) => {
       <div className={styles.Slide3}>
         <ImageDetailContainer
           description1={data.slide5Heading.desb}
-          image={data.slide5Image.url}
+          image={data.slide5Image.url.url}
           width={data.slide5Image.width}
           height={data.slide5Image.height}
           title={data.slide5Heading.heading}
@@ -101,7 +101,7 @@ const TextileSlide3 = ({ data }) => {
         />
         <MobileImageDetailContainer
           description1={data.slide5Heading.desb}
-          image={data.slide5Image.url}
+          image={data.slide5Image.url.url}
           width={data.slide5Image.width}
           height={data.slide5Image.height}
           title={data.slide5Heading.heading}

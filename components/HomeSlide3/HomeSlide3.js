@@ -54,7 +54,6 @@ const HomeSlide3 = ({ data }) => {
       animation.current?.kill();
     };
   }, []);
-  console.log(data, "--");
 
   return (
     <div className={styles.HomeSlide3} ref={mainRef}>

@@ -86,29 +86,34 @@ export const getFatoryPageData = () => ({
 export const getAboutPageData = () => ({
   query: gql`
     query {
-      # add your queryquery {
-      aboutPage(id: "60QQOaSrS3DOxYWSvmrJrf") {
-        slide1Collection(limit: 10) {
+      aboutPage(id: "2sZpBrIUSpzRH6MbGW5Lfp") {
+        slide1CollectionCollection(limit: 3) {
           items {
             image {
-              url
               width
               height
+              title
+              url {
+                url
+              }
             }
-            heading1
-            linkText {
-              url
+            heading1 {
+              heading
+              desb
             }
           }
         }
-        aboutBoxCollection(limit: 10) {
+
+        aboutBoxCollectionCollection(limit: 3) {
           items {
             heading
             desb
           }
         }
         slide2Image {
-          url
+          url {
+            url
+          }
           title
           width
           height
@@ -121,7 +126,9 @@ export const getAboutPageData = () => ({
           url
         }
         slide3Image {
-          url
+          url {
+            url
+          }
           title
           width
           height
@@ -138,14 +145,16 @@ export const getAboutPageData = () => ({
           heading
           desb
         }
-        slide4ViewsCollection(limit: 10) {
+        slide4ViewsCollectionCollection(limit: 3) {
           items {
             heading
             desb
           }
         }
         slide5Image {
-          url
+          url {
+            url
+          }
           title
           width
           height
@@ -158,14 +167,16 @@ export const getAboutPageData = () => ({
           url
         }
         slide6Title
-        slide6Image1Collection(limit: 10) {
+        slide6Image1CollectionCollection(limit: 3) {
           items {
-            url
+            url {
+              url
+            }
             width
             height
           }
         }
-        slide6DropdownCollection(limit: 10) {
+        slide6DropdownCollectionCollection(limit: 3) {
           items {
             heading
             desb
@@ -179,7 +190,7 @@ export const getAboutPageData = () => ({
 export const getTextilePageData = () => ({
   query: gql`
     query {
-      textilePage(id: "ZMdHsRaaOFno2btyIfutm") {
+      textilePage(id: "1a1ECHnunGICi8P5HaWz0N") {
         slide1Title
         slide1Views {
           heading
@@ -197,12 +208,16 @@ export const getTextilePageData = () => ({
           width
           height
           title
-          url
+          url {
+            url
+          }
         }
         slide2Image {
           width
           height
-          url
+          url {
+            url
+          }
           title
         }
         slide2Title
@@ -214,7 +229,9 @@ export const getTextilePageData = () => ({
           width
           height
           title
-          url
+          url {
+            url
+          }
         }
         slide3Heading {
           heading
@@ -228,14 +245,18 @@ export const getTextilePageData = () => ({
           width
           height
           title
-          url
+          url {
+            url
+          }
         }
         slide4Description
         slide5Image {
           width
           height
           title
-          url
+          url {
+            url
+          }
         }
         slide5Heading {
           heading

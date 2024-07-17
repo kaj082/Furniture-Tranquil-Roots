@@ -106,14 +106,14 @@ const AboutSlide4 = ({ data }) => {
     <div className={styles.AboutSlide4}>
       <div className={styles.Slide1}>
         <ImageDetailContainer
-          image={data.slide5Image.url}
+          image={data.slide5Image.url.url}
           width={data.slide5Image.width}
           height={data.slide5Image.height}
           description1={data.slide5Details.desb}
           title={data.slide5Details.heading}
         />
         <MobileImageDetailContainer
-          image={data.slide5Image.url}
+          image={data.slide5Image.url.url}
           width={data.slide5Image.width}
           height={data.slide5Image.height}
           description1={data.slide5Details.desb}
@@ -142,7 +142,7 @@ const AboutSlide4 = ({ data }) => {
 
           <Slider {...settings} className={styles.slider} ref={sliderRef}>
             {map(data.slide6Image1Collection, (item, index) => {
-              const imgage = item?.url;
+              const imgage = item?.url.url;
               const width = item?.width;
               const height = item?.height;
 

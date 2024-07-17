@@ -68,7 +68,7 @@ const TexttileSlide2 = (data) => {
         />
         <Image
           className={styles.bigImage}
-          src={data.data.slide2Image.url}
+          src={data.data.slide2Image.url.url}
           width={data.data.slide2Image.width}
           height={data.data.slide2Image.height}
           alt=""

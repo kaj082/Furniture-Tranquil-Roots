@@ -70,7 +70,7 @@ const AboutSlide1 = ({ data }) => {
       <div className={styles.imageConatiner}>
         <Slider ref={sliderRef} {...settings} className={styles.slider}>
           {map(data.slide1Collection, (item, index) => {
-            const image = item.image.url;
+            const image = item.image.url.url;
             const width = item.image?.width;
             const height = item.image?.height;
 
@@ -93,7 +93,7 @@ const AboutSlide1 = ({ data }) => {
                       itemRef.current[index] = item;
                     }}
                   >
-                    {item.heading1}
+                    {item.heading1.heading}
                   </h1>
                 </div>
               </div>

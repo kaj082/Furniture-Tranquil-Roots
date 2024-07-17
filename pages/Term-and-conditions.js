@@ -10,18 +10,18 @@ const TermAndConditions = () => {
           <strong>Terms and Conditions</strong>
         </h1>
 
-        <p>Welcome to nicelinkusa.com!</p>
+        <p>Welcome to tranquilroots.com!</p>
 
         <p>
           These terms and conditions outline the rules and regulations for the
-          use of Nice Link USA LLC's Website, located at
-          https://nicelinkusa.com/.
+          use of Tranquil Roots LLC's Website, located at
+          https://tranquilroots.com/.
         </p>
 
         <p>
           By accessing this website we assume you accept these terms and
-          conditions. Do not continue to use nicelinkusa.com if you do not agree
-          to take all of the terms and conditions stated on this page.
+          conditions. Do not continue to use tranquilroots.com if you do not
+          agree to take all of the terms and conditions stated on this page.
         </p>
 
         <p>
@@ -44,9 +44,9 @@ const TermAndConditions = () => {
         <h3>Cookies</h3>
 
         <p>
-          We employ the use of cookies. By accessing nicelinkusa.com, you agreed
-          to use cookies in agreement with the Nice Link USA LLC's Privacy
-          Policy.{" "}
+          We employ the use of cookies. By accessing tranquilroots.com, you
+          agreed to use cookies in agreement with the Tranquil Roots LLC's
+          Privacy Policy.{" "}
         </p>
 
         <p>
@@ -60,19 +60,19 @@ const TermAndConditions = () => {
         <h3>License</h3>
 
         <p>
-          Unless otherwise stated, Nice Link USA LLC and/or its licensors own
-          the intellectual property rights for all material on nicelinkusa.com.
-          All intellectual property rights are reserved. You may access this
-          from nicelinkusa.com for your own personal use subjected to
-          restrictions set in these terms and conditions.
+          Unless otherwise stated, Tranquil Roots LLC and/or its licensors own
+          the intellectual property rights for all material on
+          tranquilroots.com. All intellectual property rights are reserved. You
+          may access this from tranquilroots.com for your own personal use
+          subjected to restrictions set in these terms and conditions.
         </p>
 
         <p>You must not:</p>
         <ul>
-          <li>Republish material from nicelinkusa.com</li>
-          <li>Sell, rent or sub-license material from nicelinkusa.com</li>
-          <li>Reproduce, duplicate or copy material from nicelinkusa.com</li>
-          <li>Redistribute content from nicelinkusa.com</li>
+          <li>Republish material from tranquilroots.com</li>
+          <li>Sell, rent or sub-license material from tranquilroots.com</li>
+          <li>Duplicate or copy material from tranquilroots.com</li>
+          <li>Redistribute content from tranquilroots.com</li>
         </ul>
 
         <p>
@@ -87,19 +87,19 @@ const TermAndConditions = () => {
         <p>
           Parts of this website offer an opportunity for users to post and
           exchange opinions and information in certain areas of the website.
-          Nice Link USA LLC does not filter, edit, publish or review Comments
+          Tranquil Roots LLC does not filter, edit, publish or review Comments
           prior to their presence on the website. Comments do not reflect the
-          views and opinions of Nice Link USA LLC,its agents and/or affiliates.
-          Comments reflect the views and opinions of the person who post their
-          views and opinions. To the extent permitted by applicable laws, Nice
-          Link USA LLC shall not be liable for the Comments or for any
-          liability, damages or expenses caused and/or suffered as a result of
-          any use of and/or posting of and/or appearance of the Comments on this
-          website.
+          views and opinions of Tranquil Roots LLC, its agents and/or
+          affiliates. Comments reflect the views and opinions of the person who
+          post their views and opinions. To the extent permitted by applicable
+          laws, Tranquil Roots LLC shall not be liable for the Comments or for
+          any liability, damages or expenses caused and/or suffered as a result
+          of any use of and/or posting of and/or appearance of the Comments on
+          this website.
         </p>
 
         <p>
-          Nice Link USA LLC reserves the right to monitor all Comments and to
+          Tranquil Roots LLC reserves the right to monitor all Comments and to
           remove any Comments which can be considered inappropriate, offensive
           or causes breach of these Terms and Conditions.
         </p>
@@ -128,7 +128,7 @@ const TermAndConditions = () => {
         </ul>
 
         <p>
-          You hereby grant Nice Link USA LLC a non-exclusive license to use,
+          You hereby grant Tranquil Roots LLC a non-exclusive license to use,
           reproduce, edit and authorize others to use, reproduce and edit any of
           your Comments in any and all forms, formats or media.
         </p>
@@ -184,7 +184,7 @@ const TermAndConditions = () => {
           that: (a) the link would not make us look unfavorably to ourselves or
           to our accredited businesses; (b) the organization does not have any
           negative records with us; (c) the benefit to us from the visibility of
-          the hyperlink compensates the absence of Nice Link USA LLC; and (d)
+          the hyperlink compensates the absence of Tranquil Roots LLC; and (d)
           the link is in the context of general resource information.
         </p>
 
@@ -198,8 +198,8 @@ const TermAndConditions = () => {
         <p>
           If you are one of the organizations listed in paragraph 2 above and
           are interested in linking to our website, you must inform us by
-          sending an e-mail to Nice Link USA LLC. Please include your name, your
-          organization name, contact information as well as the URL of your
+          sending an e-mail to Tranquil Roots LLC. Please include your name,
+          your organization name, contact information as well as the URL of your
           site, a list of any URLs from which you intend to link to our Website,
           and a list of the URLs on our site to which you would like to link.
           Wait 2-3 weeks for a response.
@@ -218,7 +218,7 @@ const TermAndConditions = () => {
         </ul>
 
         <p>
-          No use of Nice Link USA LLC's logo or other artwork will be allowed
+          No use of Tranquil Roots LLC's logo or other artwork will be allowed
           for linking absent a trademark license agreement.
         </p>
 
@@ -246,7 +246,7 @@ const TermAndConditions = () => {
         <p>
           We reserve the right to request that you remove all links or any
           particular link to our Website. You approve to immediately remove all
-          links to our Website upon request. We also reserve the right to amen
+          links to our Website upon request. We also reserve the right to amend
           these terms and conditions and it's linking policy at any time. By
           continuously linking to our Website, you agree to be bound to and
           follow these linking terms and conditions.
