@@ -118,9 +118,9 @@ const CollectionSlide4 = ({ data }) => {
 
         <Slider {...settings} className={styles.slider} ref={sliderRef}>
           {map(data.slide6ImageCollection, (item, index) => {
-            const imgage = item?.image.url;
-            const width = item?.image.width;
-            const height = item?.image.height;
+            const imgage = item?.url?.url;
+            const width = item?.width;
+            const height = item?.height;
 
             return (
               <Image

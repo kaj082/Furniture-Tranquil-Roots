@@ -4,7 +4,8 @@ import Image from "next/image";
 import { map } from "lodash";
 
 const IndividualCoSlide2 = ({ data }) => {
-  const sliderImageCollection = data?.sliderImageCollection?.items || [];
+  const sliderImageCollection =
+    data?.sliderImageCollectionCollection?.items || [];
   const sliderMobileimgCollection =
     data?.sliderMobileimgCollection?.items || [];
   const content = data?.content || {};
@@ -16,9 +17,9 @@ const IndividualCoSlide2 = ({ data }) => {
           <>
             <div className={styles.imageContainer}>
               <Image
-                src={item?.image?.url}
-                width={item?.image?.width}
-                height={item?.image?.height}
+                src={item?.url.url}
+                width={item?.width}
+                height={item?.height}
                 alt=""
               />
             </div>

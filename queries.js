@@ -275,9 +275,11 @@ export const getTextilePageData = () => ({
 export const getDesignandInnovationPageData = () => ({
   query: gql`
     query {
-      designAndInnovation(id: "5YytIyOq5d6ex1aQ7hnBf8") {
+      designAndInnovationPage(id: "7rIr3HcOa7n6BCEskbCSlU") {
         slide1Image {
-          url
+          url {
+            url
+          }
           width
           height
         }
@@ -293,32 +295,38 @@ export const getDesignandInnovationPageData = () => ({
           url
         }
         slide2Text
-        slide2SmallImagesCollection(limit: 10) {
+        slide2SmallImagesCollectionCollection(limit: 10) {
           items {
             sys {
               id
             }
-            url
+            url {
+              url
+            }
             width
             height
           }
         }
-        slide2LeftBigImageCollection(limit: 10) {
+        slide2LeftBigImageCollectionCollection(limit: 10) {
           items {
             sys {
               id
             }
-            url
+            url {
+              url
+            }
             width
             height
           }
         }
-        slide2RightBigImageCollection(limit: 10) {
+        slide2RightBigImageCollectionCollection(limit: 10) {
           items {
             sys {
               id
             }
-            url
+            url {
+              url
+            }
             width
             height
           }
@@ -335,10 +343,14 @@ export const getDesignandInnovationPageData = () => ({
         slide3Image {
           width
           height
-          url
+          url {
+            url
+          }
         }
         slide4Image {
-          url
+          url {
+            url
+          }
           width
           height
         }
@@ -359,28 +371,38 @@ export const getDesignandInnovationPageData = () => ({
 export const getCollectionPageData = () => ({
   query: gql`
     query {
-      collection(id: "1hS5lChCv2R84ZhHKDj5S4") {
-        slide1SliderCollectionCollection(limit: 10) {
+      collectionPage(id: "2UKx7PgFcKHFxo3F1Hwl7") {
+        slide1SliderCollectionCollectionCollection(limit: 10) {
           items {
             image {
+              title
               width
-              url
               height
+              url {
+                url
+              }
             }
-            heading1
             linkText {
               text
+
               url
+            }
+            heading1 {
+              heading
+              desb
             }
           }
         }
         slide1Title
         slide1Image {
+          title
           width
           height
-          url
+          url {
+            url
+          }
         }
-        slide1BoxesCollection(limit: 10) {
+        slide1BoxesCollectionCollection(limit: 10) {
           items {
             sys {
               id
@@ -388,9 +410,15 @@ export const getCollectionPageData = () => ({
             image {
               width
               height
-              url
+              title
+              url {
+                url
+              }
             }
-            heading1
+            heading1 {
+              heading
+              desb
+            }
             linkText {
               text
               url
@@ -398,17 +426,18 @@ export const getCollectionPageData = () => ({
           }
         }
         slide6Title
-        slide6DropdownCollection(limit: 10) {
+        slide6DropdownCollectionCollection(limit: 10) {
           items {
             heading
             desb
           }
         }
-        slide6ImageCollection(limit: 10) {
+        slide6ImageCollectionCollection(limit: 10) {
           items {
-            image {
-              width
-              height
+            width
+            height
+            title
+            url {
               url
             }
           }
@@ -549,27 +578,29 @@ export const getCollectionContentBox = () => ({
             id
           }
 
-          sliderMobileimgCollection(limit: 10) {
+          sliderMobileimgCollectionCollection(limit: 10) {
             items {
               sys {
                 id
               }
-              image {
+              width
+              height
+              url {
                 url
-                width
-                height
               }
+              title
             }
           }
-          sliderImageCollection(limit: 10) {
+          sliderImageCollectionCollection(limit: 10) {
             items {
               sys {
                 id
               }
-              image {
+              width
+              height
+              title
+              url {
                 url
-                width
-                height
               }
             }
           }
@@ -604,17 +635,19 @@ export const getIndividualProductPageData = (slug) => ({
             text
             url
           }
-          sliderImageCollection(limit: 10) {
+          sliderImageCollectionCollection(limit: 10) {
             items {
               sys {
                 id
               }
-              url
+              url{url
+                
+              }
               width
               height
             }
           }
-          slide1BottomTextCollection(limit: 10) {
+          slide1BottomTextCollectionCollection(limit: 10) {
             items {
               sys {
                 id
@@ -624,14 +657,18 @@ export const getIndividualProductPageData = (slug) => ({
             }
           }
           lastSlideImage {
-            url
+            url{
+              url
+            }
             width
             height
           }
-          lastSlideBoxesCollection(limit: 10) {
+          lastSlideBoxesCollectionCollection(limit: 10) {
             items {
               image {
-                url
+                url{
+                  url
+                }
                 width
                 height
               }

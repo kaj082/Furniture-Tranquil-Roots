@@ -115,7 +115,7 @@ const DesignSlide2 = ({ data }) => {
               <div className={styles.sliderImage} key={index}>
                 <Image
                   alt=""
-                  src={item.url}
+                  src={item.url.url}
                   width={item.width}
                   height={item.height}
                 />

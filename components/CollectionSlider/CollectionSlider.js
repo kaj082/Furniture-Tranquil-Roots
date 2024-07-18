@@ -14,9 +14,10 @@ const CollectionSlider = ({ data, index }, ref) => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const router = useRouter();
 
-  const sliderImageCollection = data?.sliderImageCollection?.items || [];
+  const sliderImageCollection =
+    data?.sliderImageCollectionCollection?.items || [];
   const sliderMobileimgCollection =
-    data?.sliderMobileimgCollection?.items || [];
+    data?.sliderMobileimgCollectionCollection?.items || [];
   const content = data?.content || {};
   const button = data?.button || {};
 
@@ -72,9 +73,9 @@ const CollectionSlider = ({ data, index }, ref) => {
                 >
                   <Image
                     className={styles.image}
-                    src={item?.image?.url}
-                    width={item?.image?.width}
-                    height={item?.image?.height}
+                    src={item?.url.url}
+                    width={item?.width}
+                    height={item?.height}
                     alt=""
                     ref={addToRefs}
                   />
@@ -92,9 +93,9 @@ const CollectionSlider = ({ data, index }, ref) => {
               >
                 <Image
                   className={styles.Mobileimage}
-                  src={item?.image.url}
-                  width={item?.image.width}
-                  height={item?.image.height}
+                  src={item?.url.url}
+                  width={item?.width}
+                  height={item?.height}
                   alt=""
                 />
               </div>

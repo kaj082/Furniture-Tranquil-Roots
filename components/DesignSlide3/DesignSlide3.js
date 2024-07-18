@@ -75,7 +75,7 @@ const DesignSlide3 = ({ data }) => {
   const content = {
     description: data.slide3TitleDesc,
     list: data.slide3Text,
-    image: data.slide3Image.url,
+    image: data.slide3Image.url.url,
     imageWidth: data.slide3Image.width,
     imageHeight: data.slide3Image.height,
     link: data.slide3Button.url,
@@ -88,7 +88,7 @@ const DesignSlide3 = ({ data }) => {
           <Image
             className={styles.image}
             alt=""
-            src={data.slide3Image.url}
+            src={data.slide3Image.url.url}
             width={data.slide3Image.width}
             height={data.slide3Image.height}
           />

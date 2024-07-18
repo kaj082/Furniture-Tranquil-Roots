@@ -30,6 +30,7 @@ const CollectionBox = ({ Asindividual, data }) => {
   }, []);
 
   const num = ["1", "2", "3"];
+
   return (
     <div className={cx(styles.CollectionBox, { [styles.box]: Asindividual })}>
       {map(data?.items, (item, index) => {
@@ -43,7 +44,7 @@ const CollectionBox = ({ Asindividual, data }) => {
               >
                 <Image
                   className={styles.image}
-                  src={item.image.url}
+                  src={item.image.url?.url}
                   width={item.image.width}
                   height={item.image.height}
                   alt=""

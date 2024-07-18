@@ -15,7 +15,7 @@ const IndividualLastSlide = ({ data, Asindividual }, ref) => {
       <div className={styles.imageConatiner}>
         <Image
           className={styles.image}
-          src={data?.lastSlideImage.url}
+          src={data?.lastSlideImage.url.url}
           width={data?.lastSlideImage.width}
           height={data?.lastSlideImage.height}
           alt=""

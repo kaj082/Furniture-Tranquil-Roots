@@ -38,7 +38,7 @@ const CollectionSlide1 = ({ data, Asindividual }, ref) => {
       <div className={styles.imageConatiner}>
         <Image
           className={styles.image}
-          src={data?.slide1Image.url}
+          src={data?.slide1Image.url.url}
           width={data?.slide1Image.width}
           height={data?.slide1Image.height}
           alt=""

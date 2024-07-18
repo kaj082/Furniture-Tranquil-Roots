@@ -61,7 +61,7 @@ const DesignHeroSection = ({ slide1 }) => {
           controls={false}
           muted
           src={video}
-          poster={slide1Image.url}
+          poster={slide1Image}
         >
           <source type="video/mp4" />
         </video>

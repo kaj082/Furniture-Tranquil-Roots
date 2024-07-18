@@ -27,7 +27,8 @@ export default DesignInnovation;
 
 export async function getStaticProps() {
   const data = await client.query(getDesignandInnovationPageData());
-  const design = data.data.designAndInnovation;
+
+  const design = data.data.designAndInnovationPage;
   const slide1 = {
     slide1Title: design?.slide1Title,
     slide1Text: design?.slide1Text,
@@ -37,9 +38,11 @@ export async function getStaticProps() {
   const slide2 = {
     slide2BottomDesc: design?.slide2BottomDesc,
     slide2Button: design?.slide2Button,
-    slide2LeftBigImageCollection: design?.slide2LeftBigImageCollection,
-    slide2RightBigImageCollection: design?.slide2RightBigImageCollection,
-    slide2SmallImagesCollection: design?.slide2SmallImagesCollection,
+    slide2LeftBigImageCollection:
+      design?.slide2LeftBigImageCollectionCollection,
+    slide2RightBigImageCollection:
+      design?.slide2RightBigImageCollectionCollection,
+    slide2SmallImagesCollection: design?.slide2SmallImagesCollectionCollection,
     slide2Text: design?.slide2Text,
     slide2TitleDesc: design?.slide2TitleDesc,
   };

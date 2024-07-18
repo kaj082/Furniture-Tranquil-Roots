@@ -55,7 +55,6 @@ const HomeSlide5 = ({ data }) => {
       <div className={styles.sliderWrapper} ref={wrapperRef}>
         <Slider {...settings} className={styles.slider}>
           {map(data.slide6SliderCollection, (item, index) => {
-            console.log("dta", item);
             const image = item.image.url.url;
             const title = item.heading1.heading;
             const desc = item.heading1.desb;

@@ -38,6 +38,7 @@ const IndividualProduct = ({ data, slide1Data, lastSlideData }) => {
     });
     return () => ctx.revert();
   }, []);
+
   return (
     <PrimaryLayout variant={navVariant}>
       <IndividualCoSlide1 data={slide1Data} ref={slide1ref} />
@@ -56,16 +57,16 @@ export async function getStaticPaths() {
 
   let paths = [];
   for (let i = 0; i < content.items.length; i++) {
-    const tags = content.items[i]?.tag || [];
-    for (let j = 0; j < tags.length; j++) {
-      if (paths.indexOf(tags[j]) === -1) {
-        paths.push(tags[j]);
-      }
+    const tag = content.items[i]?.tag;
+    if (tag && paths.indexOf(tag) === -1) {
+      paths.push(tag);
     }
   }
+
   paths = paths.map((path) => ({
     params: { slug: path.toLowerCase() },
   }));
+
   return {
     paths,
     fallback: false,
@@ -81,25 +82,27 @@ export async function getStaticProps({ params }) {
     individual.data.individualCollectionCollection.items[0];
 
   const slide1Data = {
-    slide1BottomTextCollection: individualData.slide1BottomTextCollection.items,
+    slide1BottomTextCollection:
+      individualData.slide1BottomTextCollectionCollection.items,
     slide1Button: individualData.slide1Button,
     slide1SmallTitle: individualData.slide1SmallTitle,
     slide1Title: individualData.slide1Title,
   };
 
   const lastSlideData = {
-    lastSlideBoxesCollection: individualData.lastSlideBoxesCollection,
+    lastSlideBoxesCollection: individualData.lastSlideBoxesCollectionCollection,
     lastSlideImage: individualData.lastSlideImage,
   };
 
   const sliderData = {
-    sliderImageCollection: individualData.sliderImageCollection.items,
+    sliderImageCollection: individualData.sliderImageCollectionCollection.items,
   };
 
   const collectionContent = await client.query(getCollectionContentBox());
   const content = collectionContent.data.collectionContentBoxCollection;
   const data = content.items.filter((item) => {
     const tags = item?.tag || [];
+
     return tags.indexOf(params.slug.toLowerCase()) !== -1;
   });
   return {

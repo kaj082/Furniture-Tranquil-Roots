@@ -80,8 +80,8 @@ export default collections;
 
 export async function getStaticProps() {
   const data = await client.query(getCollectionPageData());
-  const collection = data.data.collection;
-  //
+  const collection = data.data.collectionPage;
+
   const collectionContent = await client.query(getCollectionContentBox());
   const content = collectionContent.data.collectionContentBoxCollection;
   const filteredContent = content.items.filter(
@@ -89,13 +89,13 @@ export async function getStaticProps() {
   );
 
   const slide1Data = {
-    slide1BoxesCollection: collection?.slide1BoxesCollection,
+    slide1BoxesCollection: collection?.slide1BoxesCollectionCollection,
     slide1Image: collection?.slide1Image,
     slide1Title: collection?.slide1Title,
   };
   const slide4Data = {
-    slide6DropdownCollection: collection?.slide6DropdownCollection,
-    slide6ImageCollection: collection?.slide6ImageCollection.items,
+    slide6DropdownCollection: collection?.slide6DropdownCollectionCollection,
+    slide6ImageCollection: collection?.slide6ImageCollectionCollection.items,
     slide6Title: collection?.slide6Title,
   };
 
