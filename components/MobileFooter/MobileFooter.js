@@ -152,7 +152,7 @@ const MobileFooter = () => {
         </div>
       </div>
       <div className={styles.termsCondition}>
-        <div className={styles.terms}>©2019 Tranquil Roots</div>
+        <div className={styles.terms}>©2024 Tranquil Roots</div>
         <div className={styles.terms}>
           <a href="/privacy">Privacy</a> |{" "}
           <a href="/Term-and-conditions">T & C</a>

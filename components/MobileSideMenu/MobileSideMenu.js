@@ -95,7 +95,7 @@ const MobileSideMenu = ({ handleClick, isOpen }) => {
         </a>
       </div>
       <div className={styles.terms}>
-        <p className={styles.text}>©2019 Nice Link Home Furnishings</p>
+        <p className={styles.text}>©2024 Tranquil Roots</p>
         <p className={styles.text}>
           <a href="/privacy">Privacy</a> | <a href="/Terms&conditions">T & C</a>
         </p>
